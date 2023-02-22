@@ -60,3 +60,25 @@
 const calcAge3 = birthYear => 2037 - birthYear;
 const age3 = calcAge3(1991);
 console.log(age3);
+
+// Arrow 다른 표현
+// 함수 안에서 한번 더 거쳐야 할 때
+const yearsUntilRetirement = birthYear => {
+    const age = 2037 - birthYear;
+    const retirement = 65 - age;
+    return retirement;
+}
+
+console.log( yearsUntilRetirement(1991) ); // 19
+
+// Arrow 다른 표현
+// 함수 안에서 한번 더 거쳐야 할 때
+// 여러개의 parameter ( 매개변수 )를 가질 때
+const yearsUntilRetirementMany = (birthYear, firstName) => {
+    const age = 2037 - birthYear;
+    const retirement = 65 - age;
+    return `${firstName} retires in ${retirement} years`;
+}
+
+console.log( yearsUntilRetirementMany(1991, 'Jonas') ); // Jonas retires in 19 years
+console.log( yearsUntilRetirementMany(1988, 'Yong') ); // Yong retires in 16 years

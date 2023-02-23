@@ -84,17 +84,76 @@
 // console.log( yearsUntilRetirementMany(1988, 'Yong') ); // Yong retires in 16 years
 
 // 5강. 함수 내에서 다른 함수 호출
+// function cutFruitPieces(fruit) {
+//     return fruit * 2; // 여기만 바꾸면 됌!!
+// }
 
-function cutFruitPieces(fruit) {
-    return fruit * 2; // 여기만 바꾸면 됌!!
-}
-
-function fruitProccessor(apples, oranges) {
-    const applePieces = cutFruitPieces(apples);
-    const orangePieces = cutFruitPieces(oranges);
+// function fruitProccessor(apples, oranges) {
+//     const applePieces = cutFruitPieces(apples);
+//     const orangePieces = cutFruitPieces(oranges);
     
-    const juice = `Juice with ${applePieces} apples and ${orangePieces} oranges`; 
-    return juice;
+//     const juice = `Juice with ${applePieces} apples and ${orangePieces} oranges`; 
+//     return juice;
+// }
+
+// console.log(fruitProccessor(2,3));
+
+// 6강. 함수 강의 복습
+const calcAge = function(birthYear) {
+    return 2037 - birthYear;
+};
+
+const yearsUntilRetirementMany = (birthYear, firstName) => {
+    const age = calcAge(birthYear);
+    const retirement = 65 - age;
+
+    if ( retirement > 0 ) {
+        console.log(`${firstName} retires in ${retirement} years`);
+        return retirement;
+    } else {
+        console.log(`${firstName} has been retired!!`);
+        return -1;
+    }
 }
 
-console.log(fruitProccessor(2,3));
+console.log(yearsUntilRetirementMany(1991,'Jonas'));
+console.log(yearsUntilRetirementMany(1950,'Yong'));
+
+//결과
+//Jonas retires in 19 years
+//Yong has been retired!!
+
+
+// Function Declaration
+function calcAge(birthYear) {
+    return 2037 - birthYear;
+}
+
+// // Function Expression
+const calcAge = function(birthYear) {
+    return 2037 - birthYear;
+};
+
+// // Arrow function
+const calcAge = birthYear => 2037 - birthYear;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

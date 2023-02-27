@@ -184,56 +184,92 @@
 // console.log(ages); // (3) [47, 70, 19]
 
 // 9강. Array(배열2)
-const friends = ['Michael','Steven','Peter'];
+// const friends = ['Michael','Steven','Peter'];
 
-// Add elements
-const newLength = friends.push('Jay');
-console.log(friends);
-console.log(newLength);
+// // Add elements
+// const newLength = friends.push('Jay');
+// console.log(friends);
+// console.log(newLength);
 
-friends.unshift('John');
-console.log(friends);
+// friends.unshift('John');
+// console.log(friends);
 
-//Remove elements
-friends.pop();   // Last
-const popped = friends.pop();
-console.log(popped);  // Peter
-console.log(friends); // (3) ['John', 'Michael', 'Steven']
+// //Remove elements
+// friends.pop();   // Last
+// const popped = friends.pop();
+// console.log(popped);  // Peter
+// console.log(friends); // (3) ['John', 'Michael', 'Steven']
 
-friends.shift();   // first
-console.log(friends);  // (2) ['Michael', 'Steven']
+// friends.shift();   // first
+// console.log(friends);  // (2) ['Michael', 'Steven']
 
-console.log(friends.indexOf('Steven')); // 1
-console.log(friends.indexOf('Bob'));    // -1
+// console.log(friends.indexOf('Steven')); // 1
+// console.log(friends.indexOf('Bob'));    // -1
 
-friends.push(23);
-console.log(friends.includes('Steven'));    // true
-console.log(friends.includes('Bob'));       // false
-console.log(friends.includes('23'));        // false
-console.log(friends.includes(23));          // true
+// friends.push(23);
+// console.log(friends.includes('Steven'));    // true
+// console.log(friends.includes('Bob'));       // false
+// console.log(friends.includes('23'));        // false
+// console.log(friends.includes(23));          // true
 
-if ( friends.includes('Steven') ) {
-    console.log('You have a friend called Steven');
-} 
+// if ( friends.includes('Steven') ) {
+//     console.log('You have a friend called Steven');
+//} 
 
 // You have a friend called Steven
 
 // Object
-const jonasArray = [
-    'Jonas',
-    'Schmedtman',
-    2037-1991,
-    'teacher',
-    ['Mach','Peter','Steven']
-];
+// const jonasArray = [
+//     'Jonas',
+//     'Schmedtman',
+//     2037-1991,
+//     'teacher',
+//     ['Mach','Peter','Steven']
+// ];
+
+// const jonas = {
+//     firstName: 'Janas',
+//     lastName: 'Schedman',
+//     age: 2037-1991,
+//     job: 'teacher',
+//     friends: ['Mach','Peter','Steven']
+// };
+
+// Object2
 
 const jonas = {
     firstName: 'Janas',
     lastName: 'Schedman',
     age: 2037-1991,
     job: 'teacher',
-    friends: ['Mach','Peter','Steven']
+    friends: ['Michael','Peter','Steven']
 };
+
+console.log(jonas);
+
+console.log(jonas.lastName);
+
+const nameKey = 'Name';
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
+
+jonas.location = 'Korea';
+jonas['twitter'] = '@jonnasSchemtmann';
+
+console.log(jonas);
+
+console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
+
+
+
+
+
+
+
+
+
+
+
 
 
 

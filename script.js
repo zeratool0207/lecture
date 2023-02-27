@@ -218,6 +218,23 @@ if ( friends.includes('Steven') ) {
 
 // You have a friend called Steven
 
+// Object
+const jonasArray = [
+    'Jonas',
+    'Schmedtman',
+    2037-1991,
+    'teacher',
+    ['Mach','Peter','Steven']
+];
+
+const jonas = {
+    firstName: 'Janas',
+    lastName: 'Schedman',
+    age: 2037-1991,
+    job: 'teacher',
+    friends: ['Mach','Peter','Steven']
+};
+
 
 
 

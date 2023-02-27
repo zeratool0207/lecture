@@ -237,31 +237,53 @@
 
 // Object2
 
+// const jonas = {
+//     firstName: 'Janas',
+//     lastName: 'Schedman',
+//     age: 2037-1991,
+//     job: 'teacher',
+//     friends: ['Michael','Peter','Steven']
+// };
+
+// console.log(jonas);
+
+// console.log(jonas.lastName);
+
+// const nameKey = 'Name';
+// console.log(jonas['first' + nameKey]);
+// console.log(jonas['last' + nameKey]);
+
+// jonas.location = 'Korea';
+// jonas['twitter'] = '@jonnasSchemtmann';
+
+// console.log(jonas);
+
+// console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
+
+
+// Object3
 const jonas = {
     firstName: 'Janas',
     lastName: 'Schedman',
-    age: 2037-1991,
+    birthYear: 1991,
     job: 'teacher',
-    friends: ['Michael','Peter','Steven']
+    friends: ['Michael','Peter','Steven'],
+    hasDriverLicense: true,
+
+    calcAge: function() {
+        return 2037 - this.birthYear;
+    }
+
+    // calcAge: function() {
+    //     console.log(this);
+    //     this.age = 2037 - this.birthYear;
+    //     return this.age;
+    // }
 };
 
-console.log(jonas);
-
-console.log(jonas.lastName);
-
-const nameKey = 'Name';
-console.log(jonas['first' + nameKey]);
-console.log(jonas['last' + nameKey]);
-
-jonas.location = 'Korea';
-jonas['twitter'] = '@jonnasSchemtmann';
-
-console.log(jonas);
-
-console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
-
-
-
+console.log(jonas.calcAge());
+console.log(`Jonas is a ${jonas.calcAge()} years old teacher, 
+and he has ${jonas.hasDriverLicense === true ? 'a' : 'no'} drivers license `);
 
 
 

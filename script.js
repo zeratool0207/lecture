@@ -297,6 +297,78 @@
 // }
 
 //Looping2
+// const jonas = [
+//     'Jonas',
+//     'Schmedtman',
+//     2037-1991,
+//     'teacher',
+//     ['Mach','Peter','Steven'],
+//     true
+// ];
+// const types = [];
+
+// // console.log(jonas[0])
+// // console.log(jonas[1])
+// // ...
+// // console.log(jonas[4])
+// // jonas[5] does not exist
+
+// for ( let i = 0; i < jonas.length; i++ ) {
+//     console.log(jonas[i], typeof jonas[i]);
+
+//     //types[i] = typeof jonas[i];
+//     types.push(typeof jonas[i]);
+// }
+
+// // 하단 results 
+// // Jonas string
+// // Schmedtman string
+// // 46 'number'
+// // teacher string
+// // (3) ['Mach', 'Peter', 'Steven'] 'object'
+// // true 'boolean'
+
+// console.log(types)
+
+// // types results
+// // (6) ['string', 'string', 'number', 'string', 'object', 'boolean']
+
+// const years = [1991, 2007, 1969, 2020];
+// const ages = [];
+
+// for ( let i = 0; i < years.length; i++ ) {
+//     ages.push(2037 - years[i]);
+// }
+// console.log(ages);
+
+// // ages results
+// //(4) [46, 30, 68, 17]
+
+// // continue and break
+// console.log('--- ONLY STRINGS---');
+// for ( let i = 0; i < jonas.length; i ++ ) {
+//     if ( typeof jonas[i] !== 'string' ) continue;
+
+//     console.log(jonas[i], typeof jonas[i]);
+// }
+
+// // --- ONLY STRINGS---
+// // Jonas string
+// // Schmedtman string
+// // teacher string
+
+// // continue and break
+// console.log('--- ONLY NUMBER---');
+// for ( let i = 0; i < jonas.length; i ++ ) {
+//     if ( typeof jonas[i] !== 'number' ) continue;
+
+//     console.log(jonas[i], typeof jonas[i]);
+// }
+
+// // --- ONLY NUMBER---
+// // 46 'number'
+
+//Looping(3)
 const jonas = [
     'Jonas',
     'Schmedtman',
@@ -305,73 +377,45 @@ const jonas = [
     ['Mach','Peter','Steven'],
     true
 ];
-const types = [];
 
-// console.log(jonas[0])
-// console.log(jonas[1])
-// ...
-// console.log(jonas[4])
-// jonas[5] does not exist
+// // 0, 1, ..., 4
+// // 4, 3, ..., 0
 
-for ( let i = 0; i < jonas.length; i++ ) {
-    console.log(jonas[i], typeof jonas[i]);
-
-    //types[i] = typeof jonas[i];
-    types.push(typeof jonas[i]);
+for ( let i = jonas.length - 1; i >= 0; i-- ) {
+    console.log(i, jonas[i]);
 }
 
-// 하단 results 
-// Jonas string
-// Schmedtman string
-// 46 'number'
-// teacher string
-// (3) ['Mach', 'Peter', 'Steven'] 'object'
-// true 'boolean'
 
-console.log(types)
+// 5 true
+// 4 (3) ['Mach', 'Peter', 'Steven']
+// 3 'teacher'
+// 2 46
+// 1 'Schmedtman'
+// 0 'Jonas'
 
-// types results
-// (6) ['string', 'string', 'number', 'string', 'object', 'boolean']
+for ( let exercise = 1; exercise < 4; exercise++ ) {
+    console.log(`------------ String exercise ${exercise} `);
 
-const years = [1991, 2007, 1969, 2020];
-const ages = [];
-
-for ( let i = 0; i < years.length; i++ ) {
-    ages.push(2037 - years[i]);
-}
-console.log(ages);
-
-// ages results
-//(4) [46, 30, 68, 17]
-
-// continue and break
-console.log('--- ONLY STRINGS---');
-for ( let i = 0; i < jonas.length; i ++ ) {
-    if ( typeof jonas[i] !== 'string' ) continue;
-
-    console.log(jonas[i], typeof jonas[i]);
+    for ( let rep = 1; rep < 6; rep++ ) {
+        console.log(`Exercise ${exercise}: Lifting Weight repetition ${rep}`);
+    }
 }
 
-// --- ONLY STRINGS---
-// Jonas string
-// Schmedtman string
-// teacher string
-
-// continue and break
-console.log('--- ONLY NUMBER---');
-for ( let i = 0; i < jonas.length; i ++ ) {
-    if ( typeof jonas[i] !== 'number' ) continue;
-
-    console.log(jonas[i], typeof jonas[i]);
-}
-
-// --- ONLY NUMBER---
-// 46 'number'
-
-
-
-
-
-
-
-
+// ------------ String exercise 1 
+// Exercise 1: Lifting Weight repetition 1
+// Exercise 1: Lifting Weight repetition 2
+// Exercise 1: Lifting Weight repetition 3
+// Exercise 1: Lifting Weight repetition 4
+// Exercise 1: Lifting Weight repetition 5
+// ------------ String exercise 2
+// Exercise 2: Lifting Weight repetition 1
+// Exercise 2: Lifting Weight repetition 2
+// Exercise 2: Lifting Weight repetition 3
+// Exercise 2: Lifting Weight repetition 4
+// Exercise 2: Lifting Weight repetition 5
+// ------------ String exercise 3 
+// Exercise 3: Lifting Weight repetition 1
+// Exercise 3: Lifting Weight repetition 2
+// Exercise 3: Lifting Weight repetition 3
+// Exercise 3: Lifting Weight repetition 4
+// Exercise 3: Lifting Weight repetition 5

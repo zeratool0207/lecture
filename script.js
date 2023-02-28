@@ -286,21 +286,87 @@
 // and he has ${jonas.hasDriverLicense === true ? 'a' : 'no'} drivers license `);
 
 //Looping
-console.log('loop1');
-console.log('loop2');
-console.log('loop3');
-console.log('loop4');
-console.log('loop5');
+// console.log('loop1');
+// console.log('loop2');
+// console.log('loop3');
+// console.log('loop4');
+// console.log('loop5');
 
-for(let rep=1; rep<=5; rep++) {
-    console.log(`loop${rep}`);
+// for(let rep=1; rep<=5; rep++) {
+//     console.log(`loop${rep}`);
+// }
+
+//Looping2
+const jonas = [
+    'Jonas',
+    'Schmedtman',
+    2037-1991,
+    'teacher',
+    ['Mach','Peter','Steven'],
+    true
+];
+const types = [];
+
+// console.log(jonas[0])
+// console.log(jonas[1])
+// ...
+// console.log(jonas[4])
+// jonas[5] does not exist
+
+for ( let i = 0; i < jonas.length; i++ ) {
+    console.log(jonas[i], typeof jonas[i]);
+
+    //types[i] = typeof jonas[i];
+    types.push(typeof jonas[i]);
 }
 
+// 하단 results 
+// Jonas string
+// Schmedtman string
+// 46 'number'
+// teacher string
+// (3) ['Mach', 'Peter', 'Steven'] 'object'
+// true 'boolean'
 
+console.log(types)
 
+// types results
+// (6) ['string', 'string', 'number', 'string', 'object', 'boolean']
 
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
 
+for ( let i = 0; i < years.length; i++ ) {
+    ages.push(2037 - years[i]);
+}
+console.log(ages);
 
+// ages results
+//(4) [46, 30, 68, 17]
+
+// continue and break
+console.log('--- ONLY STRINGS---');
+for ( let i = 0; i < jonas.length; i ++ ) {
+    if ( typeof jonas[i] !== 'string' ) continue;
+
+    console.log(jonas[i], typeof jonas[i]);
+}
+
+// --- ONLY STRINGS---
+// Jonas string
+// Schmedtman string
+// teacher string
+
+// continue and break
+console.log('--- ONLY NUMBER---');
+for ( let i = 0; i < jonas.length; i ++ ) {
+    if ( typeof jonas[i] !== 'number' ) continue;
+
+    console.log(jonas[i], typeof jonas[i]);
+}
+
+// --- ONLY NUMBER---
+// 46 'number'
 
 
 

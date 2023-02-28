@@ -262,31 +262,39 @@
 
 
 // Object3
-const jonas = {
-    firstName: 'Janas',
-    lastName: 'Schedman',
-    birthYear: 1991,
-    job: 'teacher',
-    friends: ['Michael','Peter','Steven'],
-    hasDriverLicense: true,
+// const jonas = {
+//     firstName: 'Janas',
+//     lastName: 'Schedman',
+//     birthYear: 1991,
+//     job: 'teacher',
+//     friends: ['Michael','Peter','Steven'],
+//     hasDriverLicense: true,
 
-    calcAge: function() {
-        return 2037 - this.birthYear;
-    }
+//     calcAge: function() {
+//         return 2037 - this.birthYear;
+//     }
 
-    // calcAge: function() {
-    //     console.log(this);
-    //     this.age = 2037 - this.birthYear;
-    //     return this.age;
-    // }
-};
+//     // calcAge: function() {
+//     //     console.log(this);
+//     //     this.age = 2037 - this.birthYear;
+//     //     return this.age;
+//     // }
+// };
 
-console.log(jonas.calcAge());
-console.log(`Jonas is a ${jonas.calcAge()} years old teacher, 
-and he has ${jonas.hasDriverLicense === true ? 'a' : 'no'} drivers license `);
+// console.log(jonas.calcAge());
+// console.log(`Jonas is a ${jonas.calcAge()} years old teacher, 
+// and he has ${jonas.hasDriverLicense === true ? 'a' : 'no'} drivers license `);
 
+//Looping
+console.log('loop1');
+console.log('loop2');
+console.log('loop3');
+console.log('loop4');
+console.log('loop5');
 
-
+for(let rep=1; rep<=5; rep++) {
+    console.log(`loop${rep}`);
+}
 
 
 

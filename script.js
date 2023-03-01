@@ -369,37 +369,37 @@
 // // 46 'number'
 
 //Looping(3)
-const jonas = [
-    'Jonas',
-    'Schmedtman',
-    2037-1991,
-    'teacher',
-    ['Mach','Peter','Steven'],
-    true
-];
+// const jonas = [
+//     'Jonas',
+//     'Schmedtman',
+//     2037-1991,
+//     'teacher',
+//     ['Mach','Peter','Steven'],
+//     true
+// ];
 
-// // 0, 1, ..., 4
-// // 4, 3, ..., 0
+// // // 0, 1, ..., 4
+// // // 4, 3, ..., 0
 
-for ( let i = jonas.length - 1; i >= 0; i-- ) {
-    console.log(i, jonas[i]);
-}
+// for ( let i = jonas.length - 1; i >= 0; i-- ) {
+//     console.log(i, jonas[i]);
+// }
 
 
-// 5 true
-// 4 (3) ['Mach', 'Peter', 'Steven']
-// 3 'teacher'
-// 2 46
-// 1 'Schmedtman'
-// 0 'Jonas'
+// // 5 true
+// // 4 (3) ['Mach', 'Peter', 'Steven']
+// // 3 'teacher'
+// // 2 46
+// // 1 'Schmedtman'
+// // 0 'Jonas'
 
-for ( let exercise = 1; exercise < 4; exercise++ ) {
-    console.log(`------------ String exercise ${exercise} `);
+// for ( let exercise = 1; exercise < 4; exercise++ ) {
+//     console.log(`------------ String exercise ${exercise} `);
 
-    for ( let rep = 1; rep < 6; rep++ ) {
-        console.log(`Exercise ${exercise}: Lifting Weight repetition ${rep}`);
-    }
-}
+//     for ( let rep = 1; rep < 6; rep++ ) {
+//         console.log(`Exercise ${exercise}: Lifting Weight repetition ${rep}`);
+//     }
+// }
 
 // ------------ String exercise 1 
 // Exercise 1: Lifting Weight repetition 1
@@ -419,3 +419,32 @@ for ( let exercise = 1; exercise < 4; exercise++ ) {
 // Exercise 3: Lifting Weight repetition 3
 // Exercise 3: Lifting Weight repetition 4
 // Exercise 3: Lifting Weight repetition 5
+
+// while Looping
+let rep = 1;
+while ( rep <= 10 ) {
+    console.log(`while Example ::: ${ rep }`);
+    rep++;
+}
+
+let dice = Math.trunc(Math.random()*6) +1;
+
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random()*6) +1;
+    if ( dice === 6) console.log(`Loop is about to end...`);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
